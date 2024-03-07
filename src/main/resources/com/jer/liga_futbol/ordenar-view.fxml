@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="672.0" style="-fx-background-color: #8ecae6;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jer.liga_futbol.OrdenarController">
+   <fx:include fx:id="menuBar" source="menu-view.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   <TableView fx:id="tblequipos" layoutX="15.0" layoutY="225.0" prefHeight="232.0" prefWidth="650.0">
+      <columns>
+         <TableColumn fx:id="colname" prefWidth="96.0" text="Nombre equipo" />
+         <TableColumn fx:id="colplays" prefWidth="100.0" text="Partidos jugados" />
+         <TableColumn fx:id="colplaysWin" prefWidth="108.0" text="Partidos ganados" />
+         <TableColumn fx:id="colplaysLost" prefWidth="115.0" text="Partidos perdidos" />
+         <TableColumn fx:id="colplaysDraw" prefWidth="119.0" text="Partidos empatados" />
+         <TableColumn fx:id="colptos" prefWidth="111.0" text="Puntos" />
+      </columns>
+   </TableView>
+   <Button layoutX="295.0" layoutY="177.0" mnemonicParsing="false" onAction="#ordenar" text="Ordenar" />
+   <Label layoutX="14.0" layoutY="73.0" text="Introduzca el parametro por el que desea Ordenar" />
+   <ComboBox fx:id="parametro" layoutX="295.0" layoutY="69.0" prefHeight="25.0" prefWidth="162.0" promptText="Seleccione una opcion">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Opción 1" />
+            <String fx:value="Opción 2" />
+            <String fx:value="Opción 3" />
+         </FXCollections>
+      </items>
+   </ComboBox>
+   <Label layoutX="217.0" layoutY="141.0" text="Introduzca el orden por el que desea ordenar" />
+   <ComboBox fx:id="ordenacion" layoutX="474.0" layoutY="137.0" prefHeight="25.0" prefWidth="162.0" promptText="Seleccione una opcion">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Opción 1" />
+            <String fx:value="Opción 2" />
+            <String fx:value="Opción 3" />
+         </FXCollections>
+      </items>
+   </ComboBox>
+
+</AnchorPane>

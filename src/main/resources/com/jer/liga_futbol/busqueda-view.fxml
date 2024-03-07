@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="511.0" prefWidth="664.0" style="-fx-background-color: #8ecae6;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jer.liga_futbol.busquedaController">
+    <fx:include fx:id="menuBar" source="menu-view.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    <TableView fx:id="tblequipos" layoutY="44.0" prefHeight="506.0" prefWidth="678.0">
+        <columns>
+            <TableColumn fx:id="colname" prefWidth="96.0" text="Nombre equipo" />
+            <TableColumn fx:id="colplays" prefWidth="111.0" text="Partidos jugados" />
+            <TableColumn fx:id="colplaysWin" prefWidth="105.0" text="Partidos ganados" />
+            <TableColumn fx:id="colplaysLost" prefWidth="107.0" text="Partidos perdidos" />
+            <TableColumn fx:id="colplaysDraw" prefWidth="131.0" text="Partidos empatados" />
+            <TableColumn fx:id="colptos" prefWidth="113.0" text="Puntos" />
+        </columns>
+    </TableView>
+</AnchorPane>
